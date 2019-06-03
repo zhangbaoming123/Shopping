@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.classify.CliassifyFragment">
+
+
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/ver_tab"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="match_parent"
+        app:indicator_color="@color/colorPrimary"
+        app:indicator_width="2dp"
+        app:indicator_corners="@dimen/dp_10"
+        app:indicator_gravity="left"
+        app:tab_height="50dp"
+        app:tab_mode="scrollable"/>
+    <View
+        android:id="@+id/dao_view"
+        android:layout_width="5dp"
+        android:layout_toRightOf="@id/ver_tab"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="invisible" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_toRightOf="@id/ver_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:id="@+id/cla_re"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_25"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/miao"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center"
+        android:text="秒杀专区"
+        android:textStyle="bold"
+        android:textColor="#19191A"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miao"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="下一场  18:00  开始"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:text="本场结束剩余"
+        android:layout_marginRight="@dimen/dp_20"/>
+
+    <TextView
+        android:id="@+id/miao_time"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_25"
+        android:text="56"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/miao"
+        android:background="@drawable/shpe_miao"/>
+
+    <TextView
+        android:id="@+id/mm"
+        android:layout_toLeftOf="@id/miao_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:layout_below="@id/miao"
+        android:textColor="#000000"
+        android:layout_marginRight="@dimen/dp_5"
+        android:text=": "
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/miao_time2"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_25"
+        android:text="20"
+        android:layout_toLeftOf="@id/mm"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@id/miao"
+        android:background="@drawable/shpe_miao"/>
+
+    <TextView
+        android:id="@+id/m"
+        android:layout_toLeftOf="@id/miao_time2"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:layout_below="@id/miao"
+        android:textColor="#000000"
+        android:text=": "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_25"
+        android:text="00"
+        android:layout_below="@id/miao"
+        android:layout_toLeftOf="@id/m"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/shpe_miao"/>
+</RelativeLayout>

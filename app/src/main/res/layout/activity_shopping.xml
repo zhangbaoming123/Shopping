@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShoppingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sho_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+
+        <TextView
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_130"
+            android:text="购物车"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="right"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_above="@id/rer"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sho_tool"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/dibu_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dibu_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_toRightOf="@id/dibu_cb"
+            android:gravity="center"
+            android:text="全选"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/dibu_te2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_68"
+            android:layout_toRightOf="@id/dibu_tv1"
+            android:gravity="center"
+            android:text="商品总价："
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/dibu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@id/dibu_te2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="@dimen/sp_20" />
+
+        <Button
+            android:id="@+id/con"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:text="去结算" />
+    </RelativeLayout>
+</RelativeLayout>

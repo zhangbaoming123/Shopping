@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sho_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_130"
+            android:text="购物车"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="right"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+
+</android.support.constraint.ConstraintLayout>

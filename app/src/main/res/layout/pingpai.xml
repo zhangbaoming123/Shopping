@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/pingpai_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WMF制作商"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_18"/>
+
+    <TextView
+        android:id="@+id/pingpai_jiage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pingpai_name"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="9.9元起" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_20"
+        android:id="@+id/pingpai_iv"
+        android:layout_width="@dimen/dp_135"
+        android:layout_height="@dimen/dp_89"
+        android:scaleType="fitXY"
+        android:layout_below="@id/pingpai_jiage"
+        android:layout_marginTop="@dimen/dp_9"
+        android:src="@mipmap/follow"
+        android:layout_marginBottom="@dimen/dp_15"/>
+
+
+</RelativeLayout>

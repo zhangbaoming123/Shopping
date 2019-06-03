@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_135"></com.youth.banner.Banner>
+
+        <include layout="@layout/home_follow"></include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/hui"></View>
+
+        <include layout="@layout/home_xq"></include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/hui"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="#DDDADD" />
+
+        <include layout="@layout/activity_re_ping"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_20"
+            android:padding="@dimen/dp_5"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="#DDDADD" />
+
+        <include layout="@layout/activity_re_miao"></include>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/miao_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="#DDDADD" />
+
+        <include layout="@layout/activity_re_xinxian"></include>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/xin_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="#DDDADD" />
+
+        <include layout="@layout/activity_re_renqi"></include>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/renqi_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="#DDDADD" />
+
+        <include layout="@layout/activity_zhuan"></include>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/zhuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sp_20"
+            android:gravity="center"
+            android:text="猜你喜欢"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/like_Re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</ScrollView>
